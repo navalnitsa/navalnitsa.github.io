@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.bg {
+    height: 100%;
+    width: 100%;
+    transition: all 3s;
+}
+/* через джс смена дня и ночи либо светлая и темная темы*/
+.bg:active {
+    transition: all 3s;
+    transform: translateY(-110vh);
+}
