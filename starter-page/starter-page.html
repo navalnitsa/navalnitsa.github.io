@@ -5,14 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./starter-page.css">
-    <title>...</title>
+    <title>Navalnitsa</title>
 </head>
 
 <body>
-    <div class="container">
-        <img src="./images/town.jpg" class="bg">
+
+    <div class="sidebar">
+        <div class="navigation-btn" onclick="home()">Home</div>
+        <div class="navigation-btn">About Me</div>
+        <div class="navigation-btn">Abilities</div>
+        <div class="navigation-btn">Artworks</div>
+        <div class="navigation-btn">Contacts</div>
     </div>
+
+    <div class="container">
+
+        <div class="main-block">
+            <div class="quote">"i had to destroy myself<br>in order to understand"</div>
+            <div class="main-info">Navalnitsa, front-end developer and illustrator</div>
+            <img src="./images/icon.png" class="main-icon">
+            <div class="scroll-tip">Scroll down to unlock menu</div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="title">About Me</div>
+        <div class="aboutMe-block">
+            <img src="./images/part.png" class="hair-icon">
+            <div class="aboutMe-info">
+                Greetings, i am
+                <span class="name-meaning">Navalnitsa<div class="meaning">бел. Навальніца<br>eng. Thunderstorm</div>
+                </span>
+                , the creator of everything you
+                can see here.<br><br>Here you can find my works and different ways to contact me.
+            </div>
+            <a class="readMore-btn">Read more</a>
+        </div>
+
+        <div class="title">I can do:</div>
+        <div class="skills-block">
+            <div class="skill-panel">
+                <div class="skill-name">DRAWING</div>
+                <div class="skill-info">I have been drawing since my childhood and always thought that real art makes
+                    you feel the strongest emotions. I highly enjoy drawing people, elves, mermaids and other creatures.
+                    <ul><b>My main strengths are:</b>
+                        <li>Color choices</li>
+                        <li>Imagination</li>
+                    </ul>
+                    <ul><b>My main weaknesses are:</b>
+                        <li>Perspective</li>
+                        <li>Using acrylics</li>
+                    </ul>
+                    <ul><b>My main instruments are:</b>
+                        <li>Pencils</li>
+                        <li>Watercolours</li>
+                        <li>Acrylics</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="./images/mouse-and-pencil.svg" class="inbetween-icon">
+            <div class="skill-panel">
+                <div class="skill-name">CODING</div>
+                <div class="skill-info">After years of spending my spare time using gadgets, i realized that i can be
+                    really good in coding and logically thinking (which is required to code aswell). I have made my
+                    first visual novel using renPy (visual novel engine) in 10 days when i was a sophomore and now im
+                    learning web development.
+                    <ul><b>My main strengths are:</b>
+                        <li>Understanding jokes about programming</li>
+                        <li>if...else operators</li>
+                    </ul>
+                    <ul><b>My main weaknesses are:</b>
+                        <li>Not remembering syntax</li>
+                        <li>Long time thinking</li>
+                    </ul>
+                    <ul><b>Engines I had to use:</b>
+                        <li>Unity</li>
+                        <li>renPy</li>
+                        <li>Unreal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">artworks</div>
+        <div class="artworks-block">
+            <div class="gallery">
+                <img src="./images/comingsoon.jpg" class="image">
+                <img src="./images/comingsoon.jpg" class="image">
+                <img src="./images/comingsoon.jpg" class="image">
+                <img src="./images/comingsoon.jpg" class="image">
+                <img src="./images/comingsoon.jpg" class="image">
+                <img src="./images/comingsoon.jpg" class="image">
+                <img src="./images/comingsoon.jpg" class="image">
+                <img src="./images/comingsoon.jpg" class="image">
+                <img src="./images/comingsoon.jpg" class="image">
+            </div>
+
+            <div class="title">Contacts</div>
+            <div class="contacts-block">
+                <a class="fa fa-instagram"></a>
+                <a class="fa fa-github"></a>
+                <a class="fa fa-vk"></a>
+                <a class="fa fa-telegram"></a>
+            </div>
+
+            <script>
+                window.onscroll = function () {
+                    let scrollDown = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (scrollDown > 2500) {
+                        document.querySelector('.sidebar').classList.add('showSidebar')
+                        document.querySelector('.scroll-tip').classList.add('hideScrollTip')
+                        document.querySelector('.container').style.marginLeft = "100px";
+                    }
+                };
+            </script>
 </body>
 
 </html>
